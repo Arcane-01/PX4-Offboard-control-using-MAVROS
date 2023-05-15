@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- Include the MAVROS node with SITL and Gazebo -->
+	<include file="$(find px4)/launch/mavros_posix_sitl.launch">
+        <arg name="x" value="0"/>
+        <arg name="y" value="0"/>
+        <arg name="z" value="5"/>
+	</include>
+
+	<!-- Spawn the cylinder in the Gazebo simulation -->
+	<arg name="urdf_file" default="$(find mavlink_sitl_gazebo)/models/cylindersupport/cylindersupport.urdf" />
+	<arg name="model_name" default="cylinder" />
+	<node pkg="gazebo_ros" type="spawn_model" name="spawn_model" args="-urdf -file $(arg urdf_file) -model $(arg model_name)" />
+    
+	<!-- Our node to control the drone -->
+	<node pkg="offboard_py" type="offb_node.py" name="offb_node_py" required="true" output="screen" />
+</launch>
