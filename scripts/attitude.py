@@ -46,7 +46,9 @@ if __name__ == "__main__":
     pitch = 0.0  # radians
     yaw =  pi/4 # radians
     quaternion = tf.quaternion_from_euler(roll, pitch, yaw)
-
+    
+    # To publish the attitude setpoint, a new pose is created with only the orientation set. 
+    # The position values should be set to 0 to avoid unexpected behavior in the vehicle's position.
     pose.pose.orientation.x = quaternion[0]
     pose.pose.orientation.y = quaternion[1]
     pose.pose.orientation.z = quaternion[2]
