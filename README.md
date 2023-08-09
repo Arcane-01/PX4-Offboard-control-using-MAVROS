@@ -32,3 +32,6 @@ Python codes for MAVROS Offboard control
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Drone Position & Drone Orientation
 </p>
 
+### Square Trajectory
+
+<img src="images/square.gif" width="515">
