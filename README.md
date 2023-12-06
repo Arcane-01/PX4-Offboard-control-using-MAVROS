@@ -35,3 +35,10 @@ Python codes for MAVROS Offboard control
 ### Square Trajectory
 
 <img src="images/square.gif" width="515">
+<p align = "left">
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Square Trajectory
+</p>
+<img src="images/rvizvisualization/square.png" width="515">
+<p align = "left">
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Trajectory visualization in RViz
+</p>
